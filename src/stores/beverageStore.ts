@@ -4,7 +4,6 @@ import bases from "../data/bases.json";
 import creamers from "../data/creamers.json";
 import syrups from "../data/syrups.json";
 
-// --- ADD THESE EXPORTS ---
 export interface BaseBeverageType {
   id: string;
   name: string;
@@ -22,12 +21,10 @@ export interface SyrupType {
   name: string;
   color: string;
 }
-// -------------------------
 
 export const useBeverageStore = defineStore("BeverageStore", {
   state: () => ({
     temps: tempretures,
-    // Cast the JSON data to the types we just defined
     bases: bases as BaseBeverageType[],
     creamers: creamers as CreamerType[],
     syrups: syrups as SyrupType[],
