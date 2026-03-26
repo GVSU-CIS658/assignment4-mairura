@@ -27,7 +27,7 @@ import Creamer from "./Creamer.vue";
 import Hot from "./Hot.vue";
 import Cold from "./Cold.vue";
 
-import type { BaseBeverageType, CreamerType, SyrupType } from "../stores/beverage";
+import type { BaseBeverageType, CreamerType, SyrupType } from "../stores/beverageStore";
 
 type Props = {
   isIced: boolean;
