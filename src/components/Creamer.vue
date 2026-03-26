@@ -1,10 +1,10 @@
 <template>
-  <div class="froth">
+  <div class="froth" :style="{ backgroundColor: color }">
     <div v-for=" in 5" class="foam"></div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">defineProps<{ color: string }>();</script>
 <style lang="scss" scoped>
 .froth {
   overflow: visible;
@@ -15,6 +15,7 @@
   background-color: #c6c6c6;
   animation: pour-tea 2s 2s forwards;
 }
+
 .foam {
   display: block;
   background: #e4e0d2;
